@@ -55,6 +55,29 @@ export default function App() {
     });
   };
 
+  // Close sidebar on window resize to desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024 && sidebarOpen) {
+        setSidebarOpen(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [sidebarOpen]);
+
+  // Lock body scroll when mobile sidebar is open
+  useEffect(() => {
+    if (sidebarOpen && window.innerWidth <= 1024) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [sidebarOpen]);
+
   // Data Loading
   useEffect(() => {
     async function loadData() {
@@ -184,6 +207,15 @@ export default function App() {
       />
 
       <div className="main-content-layout">
+        {/* Backdrop for mobile drawer */}
+        {sidebarOpen && (
+          <div
+            className="sidebar-backdrop"
+            onClick={() => setSidebarOpen(false)}
+            aria-label="Close sidebar overlay"
+          />
+        )}
+
         {/* Sticky Syllabus Units Sidebar */}
         <TopicSidebar
           units={currentUnits}
@@ -242,7 +274,7 @@ export default function App() {
           {/* Active Filter Chips Bar */}
           {(selectedUnit !== null || selectedType || searchQuery || showOnlyBookmarked) && (
             <div className="active-filters-bar">
-              <span className="filter-label">Active Filters:</span>
+              <span className="filter-label">Filters:</span>
               {selectedUnit !== null && (
                 <span className="filter-chip">
                   Unit {selectedUnit}
