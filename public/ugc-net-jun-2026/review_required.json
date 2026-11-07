@@ -1,0 +1,18 @@
+[
+  {
+    "question_id": "NET-2026-JUNE-P2-Q094",
+    "source_page": 56,
+    "original_question_number": 94,
+    "extraction_problems": [
+      "The four answer options are tree diagrams (not text) and are provided only as part of the attached page image; they were not transcribed."
+    ]
+  },
+  {
+    "question_id": "NET-2026-JUNE-P2-Q110",
+    "source_page": 66,
+    "original_question_number": 110,
+    "extraction_problems": [
+      "The question's DFA and all four answer options are diagrams (not text); they are provided only in the attached page image and were not transcribed."
+    ]
+  }
+]

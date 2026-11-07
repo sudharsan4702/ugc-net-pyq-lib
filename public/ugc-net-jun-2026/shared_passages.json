@@ -1,0 +1,115 @@
+[
+  {
+    "passage_id": "P1_Q1_Q5",
+    "applies_to_questions": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "source_page": 1,
+    "heading": "Comprehension:",
+    "text": "Answer the questions from 01 to 05 on the basis of information given below:\n\nThere is a firm which provides consultancy related to various areas like, Education, Finance, Health, Social Media, Marriage and Others on the basis of applications received. The following table shows the percent of applications received for consultancy over time under different areas. The total number of applications received during Feb 2025 was larger than the number received in Apr 2025. The total number of applications received during Jan 2025 was larger than the number received in Mar 2025.",
+    "table": {
+      "caption": "Percentage of applications received",
+      "columns": [
+        "Area",
+        "Jan 2025",
+        "Feb 2025",
+        "Mar 2025",
+        "Apr 2025"
+      ],
+      "rows": [
+        [
+          "Education",
+          "38",
+          "33",
+          "19",
+          "17"
+        ],
+        [
+          "Finance",
+          "25",
+          "30",
+          "37",
+          "45"
+        ],
+        [
+          "Health",
+          "11",
+          "18",
+          "5",
+          "18"
+        ],
+        [
+          "Social Media",
+          "5",
+          "3",
+          "10",
+          "6"
+        ],
+        [
+          "Marriage",
+          "3",
+          "7",
+          "10",
+          "11"
+        ],
+        [
+          "Others",
+          "18",
+          "9",
+          "19",
+          "3"
+        ],
+        [
+          "Total Percentage",
+          "100%",
+          "100%",
+          "100%",
+          "100%"
+        ]
+      ]
+    }
+  },
+  {
+    "passage_id": "P1_Q46_Q50",
+    "applies_to_questions": [
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "source_page": 29,
+    "heading": "Comprehension:",
+    "text": "Perhaps the best known of these sociologists is Oliver (1990), who argues that the biomedical model of disability leads to what he calls an ideology of personal tragedy which stresses the need for the individual disabled person to come to terms with 'their' problem, by struggling to cope as best they can.\n\nOliver calls this the personal tragedy model because it tends to describe disability as some terrible personal problem, which has ruined that person's life. He suggests that this model has now become taken for granted, achieving 'ideological hegemony' in the way that disabled people are viewed.\n\nIn place of the individualistic or personal tragedy model, Oliver argues that disability should be seen as a social problem and that it can only be understood within a wider social and economic framework, that is, within a social model.\n\nOliver argues that a clear distinction can be made between impairment and disability. A person may have a physical impairment of some kind, but it only becomes a disability when society organises social and economic features in such a way as to translate the impairment into a disability. For example, if the only means to enter a cinema is by using steps, then a person who has an impairment which leads them to use a wheelchair becomes disabled. However, if a ramp is provided and the ticket booth is at a lower height, and adequate spaces are provided for wheelchair users, then the person is no longer disabled. So, disability derives from organising society in such a way as to change impairment into disability."
+  },
+  {
+    "passage_id": "P2_Q141_Q145",
+    "applies_to_questions": [
+      141,
+      142,
+      143,
+      144,
+      145
+    ],
+    "source_page": 83,
+    "heading": "Comprehension:",
+    "text": "In a particular program, it is found that 1% of the code accounts for 50% of the execution time. To code the program in FORTRAN, it takes 100 man-days. Coding in assembly language is 10 times harder than coding in FORTRAN, but runs 5 times faster. Converting (rewriting) an existing FORTRAN program to an assembly language program is 4 times harder than coding in FORTRAN."
+  },
+  {
+    "passage_id": "P2_Q146_Q150",
+    "applies_to_questions": [
+      146,
+      147,
+      148,
+      149,
+      150
+    ],
+    "source_page": 86,
+    "heading": "Comprehension:",
+    "text": "Consider the Following Context Free Grammar (G) :-\n\nS → A B\nB → +A B | ∈\nA → C D\nD → * C D | ∈\nC → [S] | x\n\nVariable = { S, A, B, C, D }\n\nTerminals = { +, *, [ , ], x }"
+  }
+]
