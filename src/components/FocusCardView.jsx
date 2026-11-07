@@ -42,7 +42,7 @@ export default function FocusCardView({
   }
 
   const currentQ = questions[currentIndex];
-  const passage = currentQ.shared_passage ? passages[currentQ.shared_passage.passage_id] : null;
+  const passage = currentQ.passage_key ? passages[currentQ.passage_key] : (currentQ.shared_passage ? passages[currentQ.shared_passage.passage_id] : null);
 
   return (
     <div className="focus-view-container">

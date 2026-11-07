@@ -134,6 +134,7 @@ export default function QuestionCard({
         {additional_content?.visual_reference && (
           <DiagramRenderer
             visualReference={additional_content.visual_reference}
+            figuresDir={`/${question.exam_id}`}
             onInspect={onInspectImage}
           />
         )}

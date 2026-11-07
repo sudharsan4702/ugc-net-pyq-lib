@@ -1,0 +1,10 @@
+[
+  {
+    "question_id": "NET-2025-JUNE-P2-Q094",
+    "source_page": 61,
+    "original_question_number": 94,
+    "extraction_problems": [
+      "The DFA and all four answer options are diagrams (NFAs), not text; they exist only in the attached page image and were not transcribed."
+    ]
+  }
+]

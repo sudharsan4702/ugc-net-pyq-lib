@@ -1,0 +1,94 @@
+[
+  {
+    "passage_id": "P1_Q1_Q5",
+    "applies_to_questions": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "source_page": 1,
+    "heading": null,
+    "text": "The following table shows the cumulative percentage of the total number of students appearing in the Hindi and Punjabi examination and the cumulative number of students appearing in the Hindi examination and scoring marks in five different categories, namely, 80 and above; 70 and above;  60 and above; 50 and above; and 40 and above.  Based on the data in the table, answer the questions that follow.",
+    "table": {
+      "caption": "Marks-wise distribution of students",
+      "columns": [
+        "Marks (Out of 100)",
+        "Cumulative precentage of the total number of students who appeared in Hindi and Punjabi",
+        "Cumulative number of students who appeared in Hindi"
+      ],
+      "rows": [
+        [
+          "80 and above",
+          "15%",
+          "108"
+        ],
+        [
+          "70 and above",
+          "35%",
+          "264"
+        ],
+        [
+          "60 and above",
+          "65%",
+          "424"
+        ],
+        [
+          "50 and above",
+          "90%",
+          "554"
+        ],
+        [
+          "40 and above",
+          "100%",
+          "624"
+        ]
+      ]
+    },
+    "notes": [
+      "Note : (1) Total number of students who attended the exam is 1200.",
+      "(2) No student failed in the examination.",
+      "(3) Each student appeared in only one exam, that is, either in Hindi or in Punjabi exam."
+    ]
+  },
+  {
+    "passage_id": "P1_Q46_Q50",
+    "applies_to_questions": [
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "source_page": 26,
+    "heading": "Read the following passage carefully and answer the questions .",
+    "text": "Forced by circumstances and in search of success and status, educated young men and women settle far away from their parents. Some go abroad. The very education that the parents manage to give to their children turns against them in the end. Their children go away in search of green pastures leaving them alone. International community as well as our government is aware of their problems. The UNO proclaimed the year 1999 as ‘International Year for the Aged’. In our own country too the year 2000 was proclaimed ‘The Year for the Aged’.\n\nArticle 41 of our constitution clearly makes it incumbent on the state to look after the aged. There is a social welfare ministry responsible for the welfare of the aged. Laws are made from time-to-time to protect the rights of senior citizens. For example under law parents cannot be evicted from a house without due process of law under section 105 of the Criminal Procedure Code. A magistrate can order a person to maintain his/her old parents under the Maintenance of Parents Act. The Hindu Adoption and Maintenance act says that the aged parents can demand for maintenance from their children. The Domestic Violence Act also provides parents with the rights to seek relief from any kind of abuse."
+  },
+  {
+    "passage_id": "P2_Q141_Q145",
+    "applies_to_questions": [
+      141,
+      142,
+      143,
+      144,
+      145
+    ],
+    "source_page": 96,
+    "heading": null,
+    "text": "Consider the following Three Address code sample for solving the questions :\n100 : t1 = y+2\n101 : initial = x/t1\n102 : limit = 10\n103 : if i >j goto 105\n104 : goto 111\n105 : if num > b goto 107\n106 : goto 111\n107 : num = limit-1\n108 : b = y+2\n109 : i = i - num\n110 : goto 103\n111 : j = i - num\n112 : k= j+b"
+  },
+  {
+    "passage_id": "P2_Q146_Q150",
+    "applies_to_questions": [
+      146,
+      147,
+      148,
+      149,
+      150
+    ],
+    "source_page": 103,
+    "heading": null,
+    "text": "Consider the following disc Queue with requests for I/O to block on cylinders :\n45, 81, 185, 33, 175, 99, 150, 77\n(Consider that the head starts from location 58)"
+  }
+]

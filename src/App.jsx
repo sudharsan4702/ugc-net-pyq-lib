@@ -18,6 +18,7 @@ export default function App() {
   // Navigation & Filtering State
   const [selectedPaper, setSelectedPaper] = useState(2); // Default to Paper 2 (Computer Science)
   const [selectedUnit, setSelectedUnit] = useState(null); // null = All units
+  const [selectedExamId, setSelectedExamId] = useState(''); // '' = All Exams (June 2026 + June 2025)
   const [selectedType, setSelectedType] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   const [viewMode, setViewMode] = useState('stream'); // 'stream' | 'focus'
@@ -106,6 +107,15 @@ export default function App() {
     return allQuestions.filter((q) => q.paper_number === selectedPaper);
   }, [allQuestions, selectedPaper]);
 
+  // Counts by exam for active paper
+  const paperQuestionsByExam = useMemo(() => {
+    const counts = {};
+    paperQuestions.forEach((q) => {
+      counts[q.exam_id] = (counts[q.exam_id] || 0) + 1;
+    });
+    return counts;
+  }, [paperQuestions]);
+
   // Available question types in current paper
   const availableTypes = useMemo(() => {
     const types = new Set();
@@ -115,18 +125,25 @@ export default function App() {
     return Array.from(types);
   }, [paperQuestions]);
 
-  // Counts by unit for the active paper
+  // Counts by unit for the active paper (taking into account selectedExamId if any)
   const questionCountsByUnit = useMemo(() => {
     const counts = {};
     paperQuestions.forEach((q) => {
-      counts[q.unit_number] = (counts[q.unit_number] || 0) + 1;
+      if (!selectedExamId || q.exam_id === selectedExamId) {
+        counts[q.unit_number] = (counts[q.unit_number] || 0) + 1;
+      }
     });
     return counts;
-  }, [paperQuestions]);
+  }, [paperQuestions, selectedExamId]);
 
   // Filtered Questions
   const filteredQuestions = useMemo(() => {
     return paperQuestions.filter((q) => {
+      // Filter by exam session
+      if (selectedExamId && q.exam_id !== selectedExamId) {
+        return false;
+      }
+
       // Filter by unit
       if (selectedUnit !== null && q.unit_number !== selectedUnit) {
         return false;
@@ -156,7 +173,7 @@ export default function App() {
 
       return true;
     });
-  }, [paperQuestions, selectedUnit, selectedType, showOnlyBookmarked, bookmarkedSet, searchQuery]);
+  }, [paperQuestions, selectedExamId, selectedUnit, selectedType, showOnlyBookmarked, bookmarkedSet, searchQuery]);
 
   // Print Handler
   const handlePrint = () => {
@@ -164,13 +181,14 @@ export default function App() {
   };
 
   const selectedUnitObj = currentUnits.find((u) => u.unit === selectedUnit);
+  const selectedExamObj = EXAM_REGISTRY.find((e) => e.id === selectedExamId);
 
   if (loading) {
     return (
       <div className="loading-screen">
         <div className="spinner"></div>
         <h2>Loading UGC NET Question Library...</h2>
-        <p>Indexing 150 questions across 20 syllabus units</p>
+        <p>Indexing 300 questions across multiple exam cycles and 20 syllabus units</p>
       </div>
     );
   }
@@ -225,10 +243,14 @@ export default function App() {
             setSidebarOpen(false);
           }}
           questionCountsByUnit={questionCountsByUnit}
-          totalQuestionsCount={paperQuestions.length}
+          totalQuestionsCount={selectedExamId ? (paperQuestionsByExam[selectedExamId] || 0) : paperQuestions.length}
           selectedType={selectedType}
           onSelectType={setSelectedType}
           availableTypes={availableTypes}
+          exams={EXAM_REGISTRY}
+          selectedExamId={selectedExamId}
+          onSelectExamId={setSelectedExamId}
+          paperQuestionsByExam={paperQuestionsByExam}
           showOnlyBookmarked={showOnlyBookmarked}
           onToggleBookmarksOnly={() => setShowOnlyBookmarked(!showOnlyBookmarked)}
           bookmarkedCount={paperQuestions.filter((q) => bookmarkedSet.has(q.question_id)).length}
@@ -245,6 +267,9 @@ export default function App() {
                 <span className="paper-badge">
                   Paper {selectedPaper}: {selectedPaper === 1 ? 'General Paper' : 'Computer Science'}
                 </span>
+                {selectedExamObj && (
+                  <span className="unit-badge">{selectedExamObj.title}</span>
+                )}
                 {selectedUnit ? (
                   <span className="unit-badge">Unit {selectedUnit}</span>
                 ) : (
@@ -272,9 +297,15 @@ export default function App() {
           </div>
 
           {/* Active Filter Chips Bar */}
-          {(selectedUnit !== null || selectedType || searchQuery || showOnlyBookmarked) && (
+          {(selectedExamId || selectedUnit !== null || selectedType || searchQuery || showOnlyBookmarked) && (
             <div className="active-filters-bar">
               <span className="filter-label">Filters:</span>
+              {selectedExamId && (
+                <span className="filter-chip">
+                  Session: {selectedExamObj?.title || selectedExamId}
+                  <button type="button" onClick={() => setSelectedExamId('')}>✕</button>
+                </span>
+              )}
               {selectedUnit !== null && (
                 <span className="filter-chip">
                   Unit {selectedUnit}
@@ -303,6 +334,7 @@ export default function App() {
                 type="button"
                 className="btn-clear-all"
                 onClick={() => {
+                  setSelectedExamId('');
                   setSelectedUnit(null);
                   setSelectedType('');
                   setShowOnlyBookmarked(false);
@@ -324,6 +356,7 @@ export default function App() {
                 type="button"
                 className="btn btn-secondary"
                 onClick={() => {
+                  setSelectedExamId('');
                   setSelectedUnit(null);
                   setSelectedType('');
                   setShowOnlyBookmarked(false);
@@ -344,7 +377,7 @@ export default function App() {
           ) : (
             <div className="question-stream-list">
               {filteredQuestions.map((q) => {
-                const passage = q.shared_passage ? passagesMap[q.shared_passage.passage_id] : null;
+                const passage = q.passage_key ? passagesMap[q.passage_key] : (q.shared_passage ? passagesMap[q.shared_passage.passage_id] : null);
                 return (
                   <QuestionCard
                     key={q.question_id}

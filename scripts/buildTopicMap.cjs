@@ -1,11 +1,11 @@
-// Script to generate high-accuracy topic mapping for all 150 questions in public/ugc-net-jun-2026/questions.json
+// Comprehensive topic mapping generator for June 2026 and June 2025 papers
 const fs = require('fs');
 const path = require('path');
 
-const questions = JSON.parse(fs.readFileSync(path.join(__dirname, '../public/ugc-net-jun-2026/questions.json'), 'utf8'));
-
-// Exact mappings for Paper 1 (Questions 1 to 50)
-const paper1Map = {
+// ---------------------------------------------------------
+// 1. UGC NET JUNE 2026 MAPPINGS
+// ---------------------------------------------------------
+const paper1_2026 = {
   1: { unit: 7, subtopic: 'Data Interpretation (Table Calculation)' },
   2: { unit: 7, subtopic: 'Data Interpretation (Table Calculation)' },
   3: { unit: 7, subtopic: 'Data Interpretation (Table Calculation)' },
@@ -58,8 +58,7 @@ const paper1Map = {
   50: { unit: 3, subtopic: 'Comprehension: Contextual Vocabulary & Theme' }
 };
 
-// Exact mappings for Paper 2 (Computer Science - Questions 51 to 150)
-const paper2Map = {
+const paper2_2026 = {
   51: { unit: 1, subtopic: 'Graph Theory & Tree Properties' },
   52: { unit: 6, subtopic: 'Software Process & Life Cycle Models' },
   53: { unit: 1, subtopic: 'Computational Complexity & Bit Operations' },
@@ -162,24 +161,197 @@ const paper2Map = {
   150: { unit: 8, subtopic: 'Compiler Design: FIRST Set Computation' }
 };
 
+// ---------------------------------------------------------
+// 2. UGC NET JUNE 2025 MAPPINGS
+// ---------------------------------------------------------
+const paper1_2025 = {
+  1: { unit: 7, subtopic: 'Data Interpretation (Marks Comparison)' },
+  2: { unit: 7, subtopic: 'Data Interpretation (Ratio Calculation)' },
+  3: { unit: 7, subtopic: 'Data Interpretation (Average Calculation)' },
+  4: { unit: 7, subtopic: 'Data Interpretation (Summation Calculation)' },
+  5: { unit: 7, subtopic: 'Data Interpretation (Difference Calculation)' },
+  6: { unit: 10, subtopic: 'Accreditation & Regulatory Bodies (NBA, AICTE, UGC, NAAC)' },
+  7: { unit: 6, subtopic: 'Informal Fallacies (Fallacy of Division)' },
+  8: { unit: 6, subtopic: 'Logical Extension and Intension of Terms' },
+  9: { unit: 1, subtopic: 'Simulation Model & Role of Teacher' },
+  10: { unit: 6, subtopic: 'Classical Indian School of Logic (Nyaya)' },
+  11: { unit: 6, subtopic: 'Classical Square of Opposition (Contradictory)' },
+  12: { unit: 1, subtopic: 'Learning Styles & Cognitive Approaches' },
+  13: { unit: 9, subtopic: 'Atmospheric Greenhouse Gases (CO₂ Hemispheric Distribution)' },
+  14: { unit: 8, subtopic: 'Operating Systems (Linux, Windows, macOS, Android)' },
+  15: { unit: 4, subtopic: 'Cinema & Cultural Communication (Satyajit Ray Works)' },
+  16: { unit: 1, subtopic: 'Problem-Solving Strategy Steps' },
+  17: { unit: 2, subtopic: 'Explanatory Research Concepts' },
+  18: { unit: 5, subtopic: 'Retail Price, Commission & Profit Percentage' },
+  19: { unit: 2, subtopic: 'Statistical Measures (Standard Deviation & CV)' },
+  20: { unit: 4, subtopic: 'Indian Cinema History (First Talkie Film)' },
+  21: { unit: 2, subtopic: 'Research Terminology & Qualitative Meaning' },
+  22: { unit: 5, subtopic: 'Number Series & Arithmetic Sequences' },
+  23: { unit: 4, subtopic: 'Indian Film History (First Feature Film)' },
+  24: { unit: 8, subtopic: 'Memory Hierarchy Access Time (Registers to Disk)' },
+  25: { unit: 2, subtopic: 'Research Ethics & Risks of Plagiarism' },
+  26: { unit: 9, subtopic: 'Surface Waste Management & Treatment Sequence' },
+  27: { unit: 10, subtopic: 'Ancient Indian Education System (Diksha Guru Roles)' },
+  28: { unit: 9, subtopic: 'Water Quality Indicators (Coliform Bacteria)' },
+  29: { unit: 9, subtopic: 'Nuclear Fuel Cycle & Uranium Enrichment' },
+  30: { unit: 8, subtopic: 'Computer Generations & Hardware (Transistors)' },
+  31: { unit: 5, subtopic: 'Coding-Decoding & Letter-Number Mapping' },
+  32: { unit: 9, subtopic: 'Seismic Scales (Modified Mercalli vs Richter Scale)' },
+  33: { unit: 6, subtopic: 'Categorical Propositions & Truth Value Inferences' },
+  34: { unit: 2, subtopic: 'Exploratory Research Methodology' },
+  35: { unit: 10, subtopic: 'National Policy on Education 1986 Key Bodies' },
+  36: { unit: 6, subtopic: 'Logical Reasoning Arguments Analysis' },
+  37: { unit: 10, subtopic: 'International Educational Frameworks (UNESCO EFA)' },
+  38: { unit: 5, subtopic: 'Simple Interest & Principal Calculation' },
+  39: { unit: 2, subtopic: 'Population Mean & Variance Formulas' },
+  40: { unit: 10, subtopic: 'Choice Based Credit System (CBCS) Reforms' },
+  41: { unit: 1, subtopic: 'Inclusive Education & Universal Learning' },
+  42: { unit: 8, subtopic: 'IEEE Standards & Ethernet Networking (IEEE 802.3)' },
+  43: { unit: 4, subtopic: 'Broadcast Media History (Indian TV Programmes)' },
+  44: { unit: 8, subtopic: 'Cybersecurity & Threat Classification' },
+  45: { unit: 10, subtopic: 'Evolution of Modern Indian Higher Education Chronology' },
+  46: { unit: 3, subtopic: 'Comprehension: Parents Maintenance & Welfare Act' },
+  47: { unit: 3, subtopic: 'Comprehension: Legal Empowerment & Enforcement' },
+  48: { unit: 3, subtopic: 'Comprehension: UN Proclamations & Senior Citizens' },
+  49: { unit: 3, subtopic: 'Comprehension: Statutory Relief Rights' },
+  50: { unit: 3, subtopic: 'Comprehension: Eviction Protections under Criminal Procedure' }
+};
+
+const paper2_2025 = {
+  51: { unit: 2, subtopic: 'Hexadecimal to Binary Number System Conversion' },
+  52: { unit: 5, subtopic: 'Process Scheduling (Burst Time & Arrival Time)' },
+  53: { unit: 6, subtopic: 'Software Design: Module Coupling Hierarchy' },
+  54: { unit: 7, subtopic: 'Data Encoding & Signaling Schemes' },
+  55: { unit: 4, subtopic: 'Relational Database Queries & Schema Joins' },
+  56: { unit: 6, subtopic: "Software Quality Factors (McCall's Model)" },
+  57: { unit: 1, subtopic: 'Propositional Logic & Conditional Equivalence' },
+  58: { unit: 10, subtopic: 'Fuzzy Relations & Fuzzy Logic Operations' },
+  59: { unit: 1, subtopic: 'Recurrence Relations & Master Theorem' },
+  60: { unit: 7, subtopic: 'Flow Control: Stop-and-Wait System Efficiency' },
+  61: { unit: 9, subtopic: 'Cloud Computing Virtualization Workflow' },
+  62: { unit: 5, subtopic: 'Linux Kernel Interrupt Protection Levels' },
+  63: { unit: 3, subtopic: 'Computer Graphics: Clipping Algorithms' },
+  64: { unit: 2, subtopic: 'CPU Instruction Execution Cycle Sequence' },
+  65: { unit: 7, subtopic: 'Web Architecture: URL to Webpage Fetch Steps' },
+  66: { unit: 10, subtopic: 'Artificial Intelligence: Intelligent Agent Types' },
+  67: { unit: 2, subtopic: 'I/O Interface & Direct Memory Write Operations' },
+  68: { unit: 3, subtopic: 'C Program Output (Control Flow & Loops)' },
+  69: { unit: 2, subtopic: 'Memory Hierarchy: Cache Mapping Techniques' },
+  70: { unit: 4, subtopic: 'Database Transactions & Isolation Levels' },
+  71: { unit: 7, subtopic: 'Cryptography: Symmetric & Asymmetric Encryption' },
+  72: { unit: 6, subtopic: 'Software Testing Phases Hierarchy' },
+  73: { unit: 3, subtopic: 'Data Structures: Infix to Postfix Conversion' },
+  74: { unit: 8, subtopic: 'Finite Automata: DFA State Language Recognition' },
+  75: { unit: 3, subtopic: 'Data Structures: Graph Adjacency Matrix Representation' },
+  76: { unit: 5, subtopic: 'Operating System: Page Table Architectures' },
+  77: { unit: 5, subtopic: 'CPU Scheduling: Average Waiting Time Calculation' },
+  78: { unit: 10, subtopic: 'Artificial Neural Networks: Truth Table Learning' },
+  79: { unit: 8, subtopic: 'Compiler Parsing Hierarchy & Grammar Power (LL to CLR)' },
+  80: { unit: 6, subtopic: 'Software Design: Cohesion Levels Comparison' },
+  81: { unit: 5, subtopic: 'Process Synchronization: Spinlock Semaphores' },
+  82: { unit: 3, subtopic: 'Greedy Algorithms: Huffman Tree Construction' },
+  83: { unit: 5, subtopic: 'Multithreading: POSIX Pthreads Library' },
+  84: { unit: 8, subtopic: 'Formal Grammars: Context-Free Grammars (CFG)' },
+  85: { unit: 3, subtopic: 'Object-Oriented Programming: Polymorphism & Binding' },
+  86: { unit: 7, subtopic: 'Wireless & Routing Protocols (IEEE 802.15/16, AODV)' },
+  87: { unit: 6, subtopic: 'Software Engineering Characteristics & Principles' },
+  88: { unit: 3, subtopic: 'Hash Table Collision Resolution Methods' },
+  89: { unit: 10, subtopic: 'Genetic Algorithms: Parent Selection Methods' },
+  90: { unit: 3, subtopic: 'C Pointer Arithmetic: 2D Array Notation' },
+  91: { unit: 1, subtopic: 'Propositional Logic: Conditional Statements & Converses' },
+  92: { unit: 10, subtopic: 'Genetic Algorithms: Termination Criteria' },
+  93: { unit: 7, subtopic: 'Packet Switching Characteristics & Delay' },
+  94: { unit: 8, subtopic: 'Automata Theory: DFA to NFA Equivalence' },
+  95: { unit: 5, subtopic: 'Virtual Memory: Process Swapping Time Calculation' },
+  96: { unit: 7, subtopic: 'Data Link Layer: Controlled Access Protocols' },
+  97: { unit: 2, subtopic: 'Computer Architecture: Arithmetic Pipeline Suboperations' },
+  98: { unit: 1, subtopic: 'Algorithm Design: Greedy Strategy Applications' },
+  99: { unit: 7, subtopic: 'Transport Layer: UDP Datagram Header Structure' },
+  100: { unit: 10, subtopic: 'Neural Networks: Perceptron Delta Learning Rule' },
+  101: { unit: 1, subtopic: 'Abstract Algebra: Group Theory Axioms' },
+  102: { unit: 5, subtopic: 'File System Architecture: Layered File System' },
+  103: { unit: 7, subtopic: 'Network Security: Cryptographic Primitives (AES, RSA, Hash)' },
+  104: { unit: 2, subtopic: 'Memory Management Architecture: Memory Spaces' },
+  105: { unit: 3, subtopic: 'Computer Graphics: 3D Projection Types (Oblique, Cavalier)' },
+  106: { unit: 2, subtopic: 'Digital Logic: Boolean Algebraic Simplification' },
+  107: { unit: 2, subtopic: 'Digital Logic Gates: Truth Table Inversions' },
+  108: { unit: 4, subtopic: 'Web Data & Databases: XML Syntax & Properties' },
+  109: { unit: 4, subtopic: 'Database Normalization: Functional Dependencies & Keys' },
+  110: { unit: 6, subtopic: 'Software Estimation: Basic COCOMO Model Calculation' },
+  111: { unit: 1, subtopic: 'Discrete Mathematics: Integer Arithmetic & Inequalities' },
+  112: { unit: 5, subtopic: 'Storage Systems: RAID Levels Architecture' },
+  113: { unit: 6, subtopic: 'Requirements Engineering: Elicitation Methods' },
+  114: { unit: 2, subtopic: 'Digital Number Systems: Gray Code Conversion' },
+  115: { unit: 1, subtopic: 'Set Theory: Principle of Inclusion-Exclusion' },
+  116: { unit: 3, subtopic: 'C Program Output (Function Calls & Recursion)' },
+  117: { unit: 1, subtopic: 'Algorithm Design: Dynamic Programming Steps' },
+  118: { unit: 8, subtopic: 'Theory of Computation: Decidability of CFLs' },
+  119: { unit: 10, subtopic: 'Fuzzy Mathematics: Fuzzy Set Union & Bounded Sum' },
+  120: { unit: 10, subtopic: 'Genetic Algorithms: Iterative Optimization Steps' },
+  121: { unit: 1, subtopic: 'Combinatorics & Number Theory Divisibility' },
+  122: { unit: 4, subtopic: 'Relational Database Integrity & Primary Keys' },
+  123: { unit: 3, subtopic: 'Data Structures: Height-Balanced AVL Trees' },
+  124: { unit: 7, subtopic: 'Network Layer: Congestion Control & Choke Packets' },
+  125: { unit: 2, subtopic: 'Computer Architecture: Programmed I/O Flow' },
+  126: { unit: 8, subtopic: 'Formal Languages: Chomsky Hierarchy (Type 0 to 3)' },
+  127: { unit: 4, subtopic: 'Data Mining & Knowledge Discovery Process' },
+  128: { unit: 3, subtopic: 'C Programming: String Pointers & Array Bounds' },
+  129: { unit: 1, subtopic: 'Dynamic Programming: Longest Common Subsequence' },
+  130: { unit: 1, subtopic: 'Combinatorics: Probability & Card Selection' },
+  131: { unit: 4, subtopic: 'Relational Schema Normalization & Keys' },
+  132: { unit: 3, subtopic: 'C Programming: Valid Pointer Operations' },
+  133: { unit: 5, subtopic: 'Operating System: Process Lifecycle & CPU States' },
+  134: { unit: 10, subtopic: 'AI Planning: STRIPS State & Action Representation' },
+  135: { unit: 3, subtopic: 'Data Structures: Queue Variations (Circular, Priority, Deque)' },
+  136: { unit: 8, subtopic: 'Theory of Computation: Regular Language Properties' },
+  137: { unit: 6, subtopic: 'Software Quality Metrics (ISO/IEC 9126 Characteristics)' },
+  138: { unit: 3, subtopic: 'C Programming: Operator Precedence & Associativity' },
+  139: { unit: 10, subtopic: 'Knowledge Engineering: Knowledge Base Design Steps' },
+  140: { unit: 6, subtopic: 'Software Testing: Black-Box & White-Box Techniques' },
+  141: { unit: 8, subtopic: 'Compiler Design: Three Address Code Basic Block Leaders' },
+  142: { unit: 8, subtopic: 'Compiler Design: Control Flow Graph (CFG) Construction' },
+  143: { unit: 8, subtopic: 'Compiler Design: Dominator Tree & Domination Relations' },
+  144: { unit: 8, subtopic: 'Compiler Design: Three Address Code Optimization' },
+  145: { unit: 8, subtopic: 'Compiler Design: High-Level Code Reconstruction from TAC' },
+  146: { unit: 5, subtopic: 'Disk Scheduling: C-LOOK Algorithm Head Movements' },
+  147: { unit: 5, subtopic: 'Disk Scheduling: C-SCAN Algorithm Total Movements' },
+  148: { unit: 5, subtopic: 'Disk Scheduling: FCFS Algorithm Total Movements' },
+  149: { unit: 5, subtopic: 'Disk Scheduling: SCAN Algorithm Traversal Order' },
+  150: { unit: 5, subtopic: 'Disk Scheduling: SSTF Algorithm Total Movements' }
+};
+
+// ---------------------------------------------------------
+// 3. READ QUESTIONS AND COMPILE COMPLETE MAP
+// ---------------------------------------------------------
+const questions2026 = JSON.parse(fs.readFileSync(path.join(__dirname, '../public/ugc-net-jun-2026/questions.json'), 'utf8'));
+const questions2025 = JSON.parse(fs.readFileSync(path.join(__dirname, '../public/ugc-net-jun-2025/questions.json'), 'utf8'));
+
 const fullMappings = {};
-questions.forEach(q => {
+
+// Process 2026
+questions2026.forEach(q => {
   const num = q.original_question_number;
-  if (q.paper_number === 1) {
-    const meta = paper1Map[num] || { unit: 1, subtopic: 'General Topic' };
-    fullMappings[q.question_id] = {
-      unit_number: meta.unit,
-      subtopic: meta.subtopic
-    };
-  } else if (q.paper_number === 2) {
-    const meta = paper2Map[num] || { unit: 1, subtopic: 'Computer Science Topic' };
-    fullMappings[q.question_id] = {
-      unit_number: meta.unit,
-      subtopic: meta.subtopic
-    };
-  }
+  const meta = q.paper_number === 1 ? (paper1_2026[num] || { unit: 1, subtopic: 'General' }) : (paper2_2026[num] || { unit: 1, subtopic: 'Computer Science' });
+  fullMappings[q.question_id] = {
+    unit_number: meta.unit,
+    subtopic: meta.subtopic
+  };
+});
+
+// Process 2025
+questions2025.forEach(q => {
+  const num = q.original_question_number;
+  const meta = q.paper_number === 1 ? (paper1_2025[num] || { unit: 1, subtopic: 'General' }) : (paper2_2025[num] || { unit: 1, subtopic: 'Computer Science' });
+  fullMappings[q.question_id] = {
+    unit_number: meta.unit,
+    subtopic: meta.subtopic
+  };
 });
 
 const outputPath = path.join(__dirname, '../src/data/questionTopicMap.json');
 fs.writeFileSync(outputPath, JSON.stringify(fullMappings, null, 2), 'utf8');
-console.log('Successfully generated topic mappings for all', Object.keys(fullMappings).length, 'questions.');
+
+console.log('Successfully generated complete topic mappings for:');
+console.log(' - June 2026 questions:', questions2026.length);
+console.log(' - June 2025 questions:', questions2025.length);
+console.log(' - Total mapped questions:', Object.keys(fullMappings).length);

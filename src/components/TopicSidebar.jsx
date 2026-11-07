@@ -9,6 +9,10 @@ export default function TopicSidebar({
   selectedType,
   onSelectType,
   availableTypes,
+  exams = [],
+  selectedExamId = '',
+  onSelectExamId,
+  paperQuestionsByExam = {},
   showOnlyBookmarked,
   onToggleBookmarksOnly,
   bookmarkedCount,
@@ -71,6 +75,35 @@ export default function TopicSidebar({
           })}
         </div>
 
+        {/* Exam Session Filter */}
+        {exams.length > 1 && (
+          <div className="sidebar-section">
+            <h3 className="section-label">Exam Session</h3>
+            <div className="type-filters-pill-group">
+              <button
+                type="button"
+                onClick={() => onSelectExamId && onSelectExamId('')}
+                className={`type-pill ${selectedExamId === '' ? 'active' : ''}`}
+              >
+                All Years ({totalQuestionsCount})
+              </button>
+              {exams.map((exam) => {
+                const count = paperQuestionsByExam[exam.id] || 0;
+                return (
+                  <button
+                    key={exam.id}
+                    type="button"
+                    onClick={() => onSelectExamId && onSelectExamId(exam.id)}
+                    className={`type-pill ${selectedExamId === exam.id ? 'active' : ''}`}
+                  >
+                    {exam.session} {exam.year} ({count})
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {/* Filter by Question Type */}
         <div className="sidebar-section">
           <h3 className="section-label">Question Type</h3>
@@ -114,4 +147,3 @@ export default function TopicSidebar({
     </aside>
   );
 }
-

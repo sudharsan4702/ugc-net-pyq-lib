@@ -1,12 +1,13 @@
 import React from 'react';
 
-export default function DiagramRenderer({ visualReference, figuresDir = '/ugc-net-jun-2026/figures', onInspect }) {
+export default function DiagramRenderer({ visualReference, figuresDir = '/ugc-net-jun-2026', onInspect }) {
   if (!visualReference) return null;
 
-  // Resolve image source cleanly
+  // Resolve image source cleanly using the question's figures directory
   let imgSrc = visualReference.image_file;
   if (imgSrc && !imgSrc.startsWith('/')) {
-    imgSrc = `/ugc-net-jun-2026/${imgSrc}`;
+    const baseDir = figuresDir || '/ugc-net-jun-2026';
+    imgSrc = `${baseDir}/${imgSrc}`.replace(/\/+/g, '/');
   }
 
   return (
@@ -38,4 +39,3 @@ export default function DiagramRenderer({ visualReference, figuresDir = '/ugc-ne
     </div>
   );
 }
-
