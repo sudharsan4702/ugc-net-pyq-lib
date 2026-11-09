@@ -188,7 +188,7 @@ export default function App() {
       <div className="loading-screen">
         <div className="spinner"></div>
         <h2>Loading UGC NET Question Library...</h2>
-        <p>Indexing 300 questions across multiple exam cycles and 20 syllabus units</p>
+        <p>Indexing questions across all registered exam cycles and 20 syllabus units</p>
       </div>
     );
   }

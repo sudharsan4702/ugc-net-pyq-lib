@@ -21,6 +21,15 @@ export const EXAM_REGISTRY = [
     questionsPath: '/ugc-net-jun-2025/questions.json',
     passagesPath: '/ugc-net-jun-2025/shared_passages.json',
     figuresDir: '/ugc-net-jun-2025/figures'
+  },
+  {
+    id: 'ugc-net-jan-2025',
+    title: 'UGC NET January 2025',
+    year: 2025,
+    session: 'January',
+    questionsPath: '/ugc-net-jan-2025/questions.json',
+    passagesPath: '/ugc-net-jan-2025/shared_passages.json',
+    figuresDir: '/ugc-net-jan-2025/figures'
   }
 ];
 

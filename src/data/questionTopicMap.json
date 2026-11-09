@@ -1198,5 +1198,605 @@
   "NET-2025-JUNE-P2-Q150": {
     "unit_number": 5,
     "subtopic": "Disk Scheduling: SSTF Algorithm Total Movements"
+  },
+  "NET-2025-JAN-P1-Q001": {
+    "unit_number": 7,
+    "subtopic": "Data Interpretation (Percentage Comparison)"
+  },
+  "NET-2025-JAN-P1-Q002": {
+    "unit_number": 7,
+    "subtopic": "Data Interpretation (Ratio Calculation)"
+  },
+  "NET-2025-JAN-P1-Q003": {
+    "unit_number": 7,
+    "subtopic": "Data Interpretation (Proportional Values)"
+  },
+  "NET-2025-JAN-P1-Q004": {
+    "unit_number": 7,
+    "subtopic": "Data Interpretation (Trend & Day Comparison)"
+  },
+  "NET-2025-JAN-P1-Q005": {
+    "unit_number": 7,
+    "subtopic": "Data Interpretation (Difference Calculation)"
+  },
+  "NET-2025-JAN-P1-Q006": {
+    "unit_number": 5,
+    "subtopic": "Number Series & Arithmetic Progression"
+  },
+  "NET-2025-JAN-P1-Q007": {
+    "unit_number": 9,
+    "subtopic": "Renewable Energy: Hydroelectric Power Plant Impacts"
+  },
+  "NET-2025-JAN-P1-Q008": {
+    "unit_number": 8,
+    "subtopic": "ICT Tools: Virtual Science Laboratories & Simulations"
+  },
+  "NET-2025-JAN-P1-Q009": {
+    "unit_number": 4,
+    "subtopic": "Language Functions: Directive & Imperative Speech"
+  },
+  "NET-2025-JAN-P1-Q010": {
+    "unit_number": 4,
+    "subtopic": "Media Ecology & Remediation of Older Media"
+  },
+  "NET-2025-JAN-P1-Q011": {
+    "unit_number": 6,
+    "subtopic": "Categorical Syllogism Rules & Valid Forms"
+  },
+  "NET-2025-JAN-P1-Q012": {
+    "unit_number": 9,
+    "subtopic": "Water Quality: Turbidity & Particulate Matter"
+  },
+  "NET-2025-JAN-P1-Q013": {
+    "unit_number": 10,
+    "subtopic": "Chronology of National Educational Organisations"
+  },
+  "NET-2025-JAN-P1-Q014": {
+    "unit_number": 1,
+    "subtopic": "Constructivist Pedagogy: Situated Cognition"
+  },
+  "NET-2025-JAN-P1-Q015": {
+    "unit_number": 9,
+    "subtopic": "Environmental Parameters (BOD, DO, Turbidity, pH)"
+  },
+  "NET-2025-JAN-P1-Q016": {
+    "unit_number": 5,
+    "subtopic": "Fractional Arithmetic & Decimal Approximations"
+  },
+  "NET-2025-JAN-P1-Q017": {
+    "unit_number": 2,
+    "subtopic": "Research Report & Thesis Component Sequence"
+  },
+  "NET-2025-JAN-P1-Q018": {
+    "unit_number": 2,
+    "subtopic": "Statistical Dispersion: Population Mean & Variance"
+  },
+  "NET-2025-JAN-P1-Q019": {
+    "unit_number": 8,
+    "subtopic": "Mobile Operating Systems & Platforms (Android)"
+  },
+  "NET-2025-JAN-P1-Q020": {
+    "unit_number": 1,
+    "subtopic": "Co-operative Learning Strategies (Jigsaw, Think-Pair)"
+  },
+  "NET-2025-JAN-P1-Q021": {
+    "unit_number": 4,
+    "subtopic": "Computer-Mediated Communication & Mass Interactivity"
+  },
+  "NET-2025-JAN-P1-Q022": {
+    "unit_number": 5,
+    "subtopic": "Ratio & Proportions (7:x = 17.5:22.5)"
+  },
+  "NET-2025-JAN-P1-Q023": {
+    "unit_number": 10,
+    "subtopic": "Higher Education in Five-Year Plans"
+  },
+  "NET-2025-JAN-P1-Q024": {
+    "unit_number": 1,
+    "subtopic": "Cognitive Apprenticeship Model (Modeling, Scaffolding)"
+  },
+  "NET-2025-JAN-P1-Q025": {
+    "unit_number": 6,
+    "subtopic": "Classical Square of Opposition: Contrary Propositions"
+  },
+  "NET-2025-JAN-P1-Q026": {
+    "unit_number": 8,
+    "subtopic": "Social Media Dynamics: Fear of Missing Out (FOMO)"
+  },
+  "NET-2025-JAN-P1-Q027": {
+    "unit_number": 8,
+    "subtopic": "Base-M Number System Conversions & Comparisons"
+  },
+  "NET-2025-JAN-P1-Q028": {
+    "unit_number": 9,
+    "subtopic": "Atmospheric Pollution: Ozone Layer & Smog Formation"
+  },
+  "NET-2025-JAN-P1-Q029": {
+    "unit_number": 8,
+    "subtopic": "Malicious Software Classification (Worms vs Viruses)"
+  },
+  "NET-2025-JAN-P1-Q030": {
+    "unit_number": 2,
+    "subtopic": "Research Methodology: Question Types & Design"
+  },
+  "NET-2025-JAN-P1-Q031": {
+    "unit_number": 5,
+    "subtopic": "Direction Sense & Displacement Arithmetic"
+  },
+  "NET-2025-JAN-P1-Q032": {
+    "unit_number": 10,
+    "subtopic": "Chronological Establishment of Central Universities"
+  },
+  "NET-2025-JAN-P1-Q033": {
+    "unit_number": 10,
+    "subtopic": "Wood's Despatch 1854 (Magna Carta of Indian Education)"
+  },
+  "NET-2025-JAN-P1-Q034": {
+    "unit_number": 1,
+    "subtopic": "Transfer of Learning (Low-Road vs High-Road)"
+  },
+  "NET-2025-JAN-P1-Q035": {
+    "unit_number": 10,
+    "subtopic": "National Open University Committee (G. Parthasarathi)"
+  },
+  "NET-2025-JAN-P1-Q036": {
+    "unit_number": 6,
+    "subtopic": "Indian Epistemology: Samanyalakshana Pratyaksha"
+  },
+  "NET-2025-JAN-P1-Q037": {
+    "unit_number": 2,
+    "subtopic": "Epistemology of Science: Positivism & Empiricism"
+  },
+  "NET-2025-JAN-P1-Q038": {
+    "unit_number": 6,
+    "subtopic": "Logical Reasoning: Fallacies & Definition Types"
+  },
+  "NET-2025-JAN-P1-Q039": {
+    "unit_number": 9,
+    "subtopic": "Acoustics & Noise: Infrasound and Ultrasound Bands"
+  },
+  "NET-2025-JAN-P1-Q040": {
+    "unit_number": 9,
+    "subtopic": "Air Pollutant Pathophysiology: Carbon Monoxide & PM"
+  },
+  "NET-2025-JAN-P1-Q041": {
+    "unit_number": 10,
+    "subtopic": "Ancient Indian Scholars & Centers of Learning"
+  },
+  "NET-2025-JAN-P1-Q042": {
+    "unit_number": 4,
+    "subtopic": "Communication Theory Concepts (Feedback, Entropy)"
+  },
+  "NET-2025-JAN-P1-Q043": {
+    "unit_number": 5,
+    "subtopic": "Coding-Decoding: Alphanumeric Letter Shifting"
+  },
+  "NET-2025-JAN-P1-Q044": {
+    "unit_number": 2,
+    "subtopic": "Research Bias: Experimenter Effect & Hawthorne Bias"
+  },
+  "NET-2025-JAN-P1-Q045": {
+    "unit_number": 2,
+    "subtopic": "Measurement Scales in Research: Interval Scales"
+  },
+  "NET-2025-JAN-P1-Q046": {
+    "unit_number": 3,
+    "subtopic": "Comprehension: Cardiac Myopathy Clinical Features"
+  },
+  "NET-2025-JAN-P1-Q047": {
+    "unit_number": 3,
+    "subtopic": "Comprehension: Surgical Interventions & Risks"
+  },
+  "NET-2025-JAN-P1-Q048": {
+    "unit_number": 3,
+    "subtopic": "Comprehension: Pathophysiology & Patient Symptoms"
+  },
+  "NET-2025-JAN-P1-Q049": {
+    "unit_number": 3,
+    "subtopic": "Comprehension: Anatomical & Cardiovascular Focus"
+  },
+  "NET-2025-JAN-P1-Q050": {
+    "unit_number": 3,
+    "subtopic": "Comprehension: Etiological Factors & Misconceptions"
+  },
+  "NET-2025-JAN-P2-Q051": {
+    "unit_number": 5,
+    "subtopic": "Virtual Memory & Page Table Size Calculations"
+  },
+  "NET-2025-JAN-P2-Q052": {
+    "unit_number": 4,
+    "subtopic": "Transaction Concurrency: Phantom Read Phenomenon"
+  },
+  "NET-2025-JAN-P2-Q053": {
+    "unit_number": 5,
+    "subtopic": "Disk Scheduling Algorithms: Graph Traversal Identification"
+  },
+  "NET-2025-JAN-P2-Q054": {
+    "unit_number": 6,
+    "subtopic": "Software Quality Assurance: Fagan Collaborative Inspection"
+  },
+  "NET-2025-JAN-P2-Q055": {
+    "unit_number": 2,
+    "subtopic": "Digital Logic: Boolean Algebra Fundamental Laws"
+  },
+  "NET-2025-JAN-P2-Q056": {
+    "unit_number": 6,
+    "subtopic": "Software Engineering: Testability & Controllability"
+  },
+  "NET-2025-JAN-P2-Q057": {
+    "unit_number": 4,
+    "subtopic": "Database Lifecycle: Design Phases Sequence"
+  },
+  "NET-2025-JAN-P2-Q058": {
+    "unit_number": 10,
+    "subtopic": "AI Automated Planning: PDDL Components"
+  },
+  "NET-2025-JAN-P2-Q059": {
+    "unit_number": 6,
+    "subtopic": "Capability Maturity Model Integration (SEI CMMI Levels)"
+  },
+  "NET-2025-JAN-P2-Q060": {
+    "unit_number": 2,
+    "subtopic": "Computer System Architecture: Instruction Cycle Order"
+  },
+  "NET-2025-JAN-P2-Q061": {
+    "unit_number": 10,
+    "subtopic": "Knowledge Representation: First-Order Logic Syntax"
+  },
+  "NET-2025-JAN-P2-Q062": {
+    "unit_number": 8,
+    "subtopic": "Context-Free Grammars: Chomsky Normal Form (CNF)"
+  },
+  "NET-2025-JAN-P2-Q063": {
+    "unit_number": 5,
+    "subtopic": "Operating System: Traps, Interrupts & Signals"
+  },
+  "NET-2025-JAN-P2-Q064": {
+    "unit_number": 3,
+    "subtopic": "Data Structures: Tree Traversals & Expression Formats"
+  },
+  "NET-2025-JAN-P2-Q065": {
+    "unit_number": 1,
+    "subtopic": "Linear Programming: Basic Feasible Solutions"
+  },
+  "NET-2025-JAN-P2-Q066": {
+    "unit_number": 6,
+    "subtopic": "Software Process: Boehm Spiral Model Risk Analysis"
+  },
+  "NET-2025-JAN-P2-Q067": {
+    "unit_number": 7,
+    "subtopic": "MAC Layer Protocols: Multiple Access Techniques"
+  },
+  "NET-2025-JAN-P2-Q068": {
+    "unit_number": 6,
+    "subtopic": "Software Development: Evolutionary Prototyping Stages"
+  },
+  "NET-2025-JAN-P2-Q069": {
+    "unit_number": 1,
+    "subtopic": "Mathematical Logic: Propositional Equivalences"
+  },
+  "NET-2025-JAN-P2-Q070": {
+    "unit_number": 7,
+    "subtopic": "Computer Networks: CSMA/CD Minimum Frame Size & Delay"
+  },
+  "NET-2025-JAN-P2-Q071": {
+    "unit_number": 7,
+    "subtopic": "Data Link Layer: Sliding Window Flow Control Sequence"
+  },
+  "NET-2025-JAN-P2-Q072": {
+    "unit_number": 8,
+    "subtopic": "Theory of Computation: Grammar Ambiguity & Inherent Ambiguity"
+  },
+  "NET-2025-JAN-P2-Q073": {
+    "unit_number": 7,
+    "subtopic": "Information Theory: Binary Hamming Distance Calculation"
+  },
+  "NET-2025-JAN-P2-Q074": {
+    "unit_number": 1,
+    "subtopic": "Algorithm Analysis: Sorting & Searching Complexity"
+  },
+  "NET-2025-JAN-P2-Q075": {
+    "unit_number": 3,
+    "subtopic": "Binary Trees: Recursive Inorder Traversal Steps"
+  },
+  "NET-2025-JAN-P2-Q076": {
+    "unit_number": 1,
+    "subtopic": "Set Theory: Set Operations & Subsets Truth Values"
+  },
+  "NET-2025-JAN-P2-Q077": {
+    "unit_number": 1,
+    "subtopic": "Recurrence Relations: Characteristic Equation Solution"
+  },
+  "NET-2025-JAN-P2-Q078": {
+    "unit_number": 10,
+    "subtopic": "AI Graph Search: Breadth First Search (BFS) Algorithms"
+  },
+  "NET-2025-JAN-P2-Q079": {
+    "unit_number": 8,
+    "subtopic": "Automata Theory: Transition Function Computation"
+  },
+  "NET-2025-JAN-P2-Q080": {
+    "unit_number": 6,
+    "subtopic": "Software Metrics: Effort Estimation Models (COCOMO)"
+  },
+  "NET-2025-JAN-P2-Q081": {
+    "unit_number": 1,
+    "subtopic": "Abstract Algebra: Element Order in Finite Groups"
+  },
+  "NET-2025-JAN-P2-Q082": {
+    "unit_number": 4,
+    "subtopic": "Database Concurrency: Serializability & Locking Protocols"
+  },
+  "NET-2025-JAN-P2-Q083": {
+    "unit_number": 7,
+    "subtopic": "Wireless Networks: Mobile Ad-Hoc Networks (MANETs)"
+  },
+  "NET-2025-JAN-P2-Q084": {
+    "unit_number": 5,
+    "subtopic": "Operating System: Priority CPU Scheduling Policy"
+  },
+  "NET-2025-JAN-P2-Q085": {
+    "unit_number": 2,
+    "subtopic": "Computer System Architecture: Paging & Memory Translation"
+  },
+  "NET-2025-JAN-P2-Q086": {
+    "unit_number": 1,
+    "subtopic": "Probability Theory: Independent Target Hit Calculations"
+  },
+  "NET-2025-JAN-P2-Q087": {
+    "unit_number": 3,
+    "subtopic": "C Programming: Operator Precedence & Short-Circuit Logic"
+  },
+  "NET-2025-JAN-P2-Q088": {
+    "unit_number": 2,
+    "subtopic": "CPU Instruction Set: Memory Reference vs Register Instructions"
+  },
+  "NET-2025-JAN-P2-Q089": {
+    "unit_number": 6,
+    "subtopic": "Requirements Engineering: Requirements Management Process"
+  },
+  "NET-2025-JAN-P2-Q090": {
+    "unit_number": 3,
+    "subtopic": "Programming Languages: Pointer Semantics & Memory Allocation"
+  },
+  "NET-2025-JAN-P2-Q091": {
+    "unit_number": 8,
+    "subtopic": "Formal Languages: Regular Languages Decidability Properties"
+  },
+  "NET-2025-JAN-P2-Q092": {
+    "unit_number": 3,
+    "subtopic": "Computer Graphics: 2D Viewing Transformation Pipeline"
+  },
+  "NET-2025-JAN-P2-Q093": {
+    "unit_number": 10,
+    "subtopic": "Machine Learning: Supervised Models & Classifiers"
+  },
+  "NET-2025-JAN-P2-Q094": {
+    "unit_number": 9,
+    "subtopic": "Cloud Computing: Service Delivery Lifecycle Architecture"
+  },
+  "NET-2025-JAN-P2-Q095": {
+    "unit_number": 2,
+    "subtopic": "Memory Hierarchy: Cache Performance Metrics & Hit Rates"
+  },
+  "NET-2025-JAN-P2-Q096": {
+    "unit_number": 7,
+    "subtopic": "Network Security: Firewall Architectures & Packet Filtering"
+  },
+  "NET-2025-JAN-P2-Q097": {
+    "unit_number": 4,
+    "subtopic": "SQL Data Manipulation: UPDATE & ALTER Operations"
+  },
+  "NET-2025-JAN-P2-Q098": {
+    "unit_number": 3,
+    "subtopic": "Data Structures: Circular Buffer & Incremental Arrays"
+  },
+  "NET-2025-JAN-P2-Q099": {
+    "unit_number": 8,
+    "subtopic": "Compiler Design: Yacc / LALR(1) Bottom-Up Parsing"
+  },
+  "NET-2025-JAN-P2-Q100": {
+    "unit_number": 8,
+    "subtopic": "Chomsky Hierarchy: Type 0 to Type 3 Language Classes"
+  },
+  "NET-2025-JAN-P2-Q101": {
+    "unit_number": 4,
+    "subtopic": "Relational Database Terminology: Arity & Degree"
+  },
+  "NET-2025-JAN-P2-Q102": {
+    "unit_number": 8,
+    "subtopic": "Compiler Optimization: Loop & Global Code Optimization Stages"
+  },
+  "NET-2025-JAN-P2-Q103": {
+    "unit_number": 8,
+    "subtopic": "Compiler Design: Intermediate Code & Syntax Directed Translation"
+  },
+  "NET-2025-JAN-P2-Q104": {
+    "unit_number": 2,
+    "subtopic": "Computer Architecture: Data Representation & Instruction Formats"
+  },
+  "NET-2025-JAN-P2-Q105": {
+    "unit_number": 3,
+    "subtopic": "Computer Graphics: Scan Conversion & Rasterization Artifacts"
+  },
+  "NET-2025-JAN-P2-Q106": {
+    "unit_number": 8,
+    "subtopic": "Theory of Computation: Pumping Lemma for Regular Languages"
+  },
+  "NET-2025-JAN-P2-Q107": {
+    "unit_number": 2,
+    "subtopic": "Arithmetic Pipelining: Fixed-Point Multiplier Stages"
+  },
+  "NET-2025-JAN-P2-Q108": {
+    "unit_number": 4,
+    "subtopic": "SQL Data Manipulation: INSERT Command Semantics"
+  },
+  "NET-2025-JAN-P2-Q109": {
+    "unit_number": 3,
+    "subtopic": "Binary Trees: Inorder Traversal Output Construction"
+  },
+  "NET-2025-JAN-P2-Q110": {
+    "unit_number": 3,
+    "subtopic": "Display Technology: CRT Phosphor Fluorescence & Persistence"
+  },
+  "NET-2025-JAN-P2-Q111": {
+    "unit_number": 4,
+    "subtopic": "Relational Model: Candidate Keys & Alternate Keys"
+  },
+  "NET-2025-JAN-P2-Q112": {
+    "unit_number": 3,
+    "subtopic": "Programming Paradigms: Modern Language Characteristics"
+  },
+  "NET-2025-JAN-P2-Q113": {
+    "unit_number": 3,
+    "subtopic": "Language Design: Scope & Side Effects of Global Variables"
+  },
+  "NET-2025-JAN-P2-Q114": {
+    "unit_number": 1,
+    "subtopic": "Graph Theory: Edge Densities in Complete & Regular Graphs"
+  },
+  "NET-2025-JAN-P2-Q115": {
+    "unit_number": 2,
+    "subtopic": "CPU Architecture: Data Manipulation Instructions Classification"
+  },
+  "NET-2025-JAN-P2-Q116": {
+    "unit_number": 2,
+    "subtopic": "Computer Architecture: Dynamic Pipelining Reservation Tables"
+  },
+  "NET-2025-JAN-P2-Q117": {
+    "unit_number": 8,
+    "subtopic": "Compiler Runtime: Activation Records & Call Stack Frames"
+  },
+  "NET-2025-JAN-P2-Q118": {
+    "unit_number": 1,
+    "subtopic": "Algorithm Paradigms: Divide and Conquer Algorithms"
+  },
+  "NET-2025-JAN-P2-Q119": {
+    "unit_number": 7,
+    "subtopic": "Transmission Media: Nyquist Maximum Channel Capacity"
+  },
+  "NET-2025-JAN-P2-Q120": {
+    "unit_number": 6,
+    "subtopic": "Software Risk Management: Risk Taxonomy & Assessment"
+  },
+  "NET-2025-JAN-P2-Q121": {
+    "unit_number": 10,
+    "subtopic": "Artificial Intelligence: Foundational Definitions of AI"
+  },
+  "NET-2025-JAN-P2-Q122": {
+    "unit_number": 10,
+    "subtopic": "Artificial Neural Networks: Feed-Forward vs Recurrent Architectures"
+  },
+  "NET-2025-JAN-P2-Q123": {
+    "unit_number": 9,
+    "subtopic": "Cloud Computing & IoT: Service Level Agreements & PaaS"
+  },
+  "NET-2025-JAN-P2-Q124": {
+    "unit_number": 3,
+    "subtopic": "C Standard Library: File Handling Functions (fseek, ftell)"
+  },
+  "NET-2025-JAN-P2-Q125": {
+    "unit_number": 10,
+    "subtopic": "Knowledge Representation: Logical Entailment Notation (⊨)"
+  },
+  "NET-2025-JAN-P2-Q126": {
+    "unit_number": 4,
+    "subtopic": "Database Architecture: Data Dictionary & System Catalog"
+  },
+  "NET-2025-JAN-P2-Q127": {
+    "unit_number": 9,
+    "subtopic": "Big Data Ecosystem: HDFS, Hadoop, Apache Pig & Hive"
+  },
+  "NET-2025-JAN-P2-Q128": {
+    "unit_number": 2,
+    "subtopic": "Digital Logic: Boolean Function Minimization"
+  },
+  "NET-2025-JAN-P2-Q129": {
+    "unit_number": 2,
+    "subtopic": "Memory Hierarchy: Access Latencies Hierarchy"
+  },
+  "NET-2025-JAN-P2-Q130": {
+    "unit_number": 4,
+    "subtopic": "Database Security & Normalization: PJNF & Lost Updates"
+  },
+  "NET-2025-JAN-P2-Q131": {
+    "unit_number": 2,
+    "subtopic": "Digital Logic: De Morgan's Boolean Complement"
+  },
+  "NET-2025-JAN-P2-Q132": {
+    "unit_number": 7,
+    "subtopic": "Application Layer Protocols: IMAP, POP3, ARP, TELNET"
+  },
+  "NET-2025-JAN-P2-Q133": {
+    "unit_number": 1,
+    "subtopic": "Graph Theory: Planarity & Kuratowski Subgraphs"
+  },
+  "NET-2025-JAN-P2-Q134": {
+    "unit_number": 10,
+    "subtopic": "Deep Learning: Multi-Layer Perceptrons & Activation Functions"
+  },
+  "NET-2025-JAN-P2-Q135": {
+    "unit_number": 10,
+    "subtopic": "Expert Systems: Knowledge Engineering Workflow"
+  },
+  "NET-2025-JAN-P2-Q136": {
+    "unit_number": 7,
+    "subtopic": "Network Configuration: DHCP DORA Protocol Stages"
+  },
+  "NET-2025-JAN-P2-Q137": {
+    "unit_number": 1,
+    "subtopic": "Optimization: Linear Programming Problem Duality & Bounds"
+  },
+  "NET-2025-JAN-P2-Q138": {
+    "unit_number": 6,
+    "subtopic": "Software Design: Jackson Structured Programming (JSP)"
+  },
+  "NET-2025-JAN-P2-Q139": {
+    "unit_number": 3,
+    "subtopic": "C Programming: Nested Ternary Expressions Evaluation"
+  },
+  "NET-2025-JAN-P2-Q140": {
+    "unit_number": 5,
+    "subtopic": "Storage Architecture: RAID Levels (RAID 1 to RAID 4)"
+  },
+  "NET-2025-JAN-P2-Q141": {
+    "unit_number": 8,
+    "subtopic": "Formal Languages: Regular Grammar Language Definition"
+  },
+  "NET-2025-JAN-P2-Q142": {
+    "unit_number": 8,
+    "subtopic": "Finite Automata: Minimal State DFA Construction"
+  },
+  "NET-2025-JAN-P2-Q143": {
+    "unit_number": 8,
+    "subtopic": "Automata Theory: Deterministic Finite Automata Equivalence"
+  },
+  "NET-2025-JAN-P2-Q144": {
+    "unit_number": 8,
+    "subtopic": "Theory of Computation: Regular Expression Equivalence"
+  },
+  "NET-2025-JAN-P2-Q145": {
+    "unit_number": 8,
+    "subtopic": "Finite Automata: State Transition Verification"
+  },
+  "NET-2025-JAN-P2-Q146": {
+    "unit_number": 5,
+    "subtopic": "CPU Scheduling: Shortest Job First (SJF) Execution"
+  },
+  "NET-2025-JAN-P2-Q147": {
+    "unit_number": 5,
+    "subtopic": "CPU Scheduling: Highest Response Ratio Next (HRRN)"
+  },
+  "NET-2025-JAN-P2-Q148": {
+    "unit_number": 5,
+    "subtopic": "CPU Scheduling: Non-Preemptive Average Waiting Time"
+  },
+  "NET-2025-JAN-P2-Q149": {
+    "unit_number": 5,
+    "subtopic": "CPU Scheduling: First-Come First-Served (FCFS) Turnaround"
+  },
+  "NET-2025-JAN-P2-Q150": {
+    "unit_number": 5,
+    "subtopic": "CPU Scheduling: Non-Preemptive Average Response Time"
   }
 }

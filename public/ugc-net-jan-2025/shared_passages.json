@@ -1,0 +1,128 @@
+[
+  {
+    "passage_id": "P1_Q1_Q5",
+    "applies_to_questions": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "source_page": 1,
+    "heading": null,
+    "text": "Bakery shops in a city prepare three different varieties of hotcakes, namely, Cornmeal, American and Swedish. The following table shows the total number of hotcakes (three varieties together) sold by four different bakery shops, namely A, B, C and D on Monday along with the number of Cornmeal hotcakes sold and the difference between the number of American hotcakes and Cornmeal hotcakes sold. Based on the data in the table, answer the questions that follow.",
+    "table": {
+      "caption": "Bakery-wise Sale Details of Hotcakes on Monday",
+      "columns": [
+        "Bakery",
+        "Total Number of Hotcakes sold",
+        "Number of Cornmeal Hotcakes Sold",
+        "Difference between the number of American and Cornmeal Hotcakes Sold"
+      ],
+      "rows": [
+        [
+          "A",
+          "1200",
+          "320",
+          "40"
+        ],
+        [
+          "B",
+          "1080",
+          "280",
+          "120"
+        ],
+        [
+          "C",
+          "1000",
+          "360",
+          "80"
+        ],
+        [
+          "D",
+          "1320",
+          "420",
+          "40"
+        ]
+      ]
+    },
+    "notes": [
+      "Note : (1) Total numbers of hotcakes sold = sum of sale of number of Cornmeal, American and Swedish hotcakes",
+      "(2) Number of American hotcakes sold is always greater than the number of Cornmeal hotcakes sold"
+    ]
+  },
+  {
+    "passage_id": "P1_Q46_Q50",
+    "applies_to_questions": [
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "source_page": 37,
+    "heading": "Read the following passage and answer the questions that follow.",
+    "text": "A radical new surgery procedure, laughed at not long ago, is holding out fresh hope for patients of cardiac myopathy, or enlargement of the heart. The technique, now in India, allows patients to go home two weeks after the operation, to lead a near-normal sedentary life. Cardiac myopathy is a condition that has a variety of causative factors. An attack from one of the 20 identified viruses, parasite infection, long-term alcohol abuse and blood pressure could bring it on, and in rare cases, it could follow child birth and is even known to run in families. The condition is marked by an increase in the size of the heart’s chambers and a decrease in the efficiency of pumping."
+  },
+  {
+    "passage_id": "P2_Q141_Q145",
+    "applies_to_questions": [
+      141,
+      142,
+      143,
+      144,
+      145
+    ],
+    "source_page": 114,
+    "heading": null,
+    "text": "A machine is represented by states Q, input alphabet ∑, transition function δ. Initial state q0 and final state F. The machine accepts all the strings over ∑ = {a, b}, which start and ended with any combination of all alphabet and abb works /lies as substring in all the strings to be accepted."
+  },
+  {
+    "passage_id": "P2_Q146_Q150",
+    "applies_to_questions": [
+      146,
+      147,
+      148,
+      149,
+      150
+    ],
+    "source_page": 119,
+    "heading": null,
+    "text": "Consider the following set of processes with the arrival time and length of CPU Burst time given in milli-seconds (ms):",
+    "table": {
+      "caption": null,
+      "columns": [
+        "Process",
+        "Arrival Time",
+        "Burst Time"
+      ],
+      "rows": [
+        [
+          "P1",
+          "0",
+          "5"
+        ],
+        [
+          "P2",
+          "2",
+          "3"
+        ],
+        [
+          "P3",
+          "2",
+          "2"
+        ],
+        [
+          "P4",
+          "5",
+          "3"
+        ],
+        [
+          "P5",
+          "6",
+          "1"
+        ]
+      ]
+    }
+  }
+]

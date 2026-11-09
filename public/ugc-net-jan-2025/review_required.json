@@ -1,0 +1,26 @@
+[
+  {
+    "question_id": "NET-2025-JAN-P2-Q142",
+    "source_page": 115,
+    "original_question_number": 142,
+    "extraction_problems": [
+      "All four answer options are DFA state diagrams (not text); they exist only in the attached page image and were not transcribed."
+    ]
+  },
+  {
+    "question_id": "NET-2025-JAN-P2-Q143",
+    "source_page": 116,
+    "original_question_number": 143,
+    "extraction_problems": [
+      "All four answer options are state diagrams (not text); they exist only in the attached page image and were not transcribed."
+    ]
+  },
+  {
+    "question_id": "NET-2025-JAN-P2-Q145",
+    "source_page": 118,
+    "original_question_number": 145,
+    "extraction_problems": [
+      "All four answer options are state diagrams (not text); they exist only in the attached page image and were not transcribed."
+    ]
+  }
+]
